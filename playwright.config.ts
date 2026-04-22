@@ -15,7 +15,7 @@ export default defineConfig({
     timeout: 30000,
     retries: process.env.CI ? 2 : 0,
     reporter: [
-        ['html', { outputFolder: 'test-reports/html' }],
+        ['html', { outputFolder: 'playwright-report/html' }],
         ['json', { outputFile: 'test-reports/report.json' }],
         ['list'],
     ],

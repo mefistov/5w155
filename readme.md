@@ -48,7 +48,7 @@ PASSWORD=
 │       └── test.spec.ts
 │
 ├── test-results/
-├── test-reports/
+├── playwright-report/
 │
 ├── .env
 ├── playwright.config.ts
@@ -70,3 +70,10 @@ PASSWORD=
 - Assets/Test data:
     - Use kebab-case.
     - Example: icon-asset.svg```
+
+## Futher steps:
+
+1. Add new POMs to cover new pages
+2. Add new Fixtures to manage combination of pages, credentials and test data
+3. Add API service layer to make framework hybrid 
+4. Add DB connection layer
