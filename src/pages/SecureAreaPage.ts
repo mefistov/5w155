@@ -13,4 +13,12 @@ export class SecureAreaPage extends BasePage{
         this.successNotification = page.locator('#flash.flash.success');
         this.closePopUpButton = page.locator('#flash.flash.close');
     }
+
+    async verifyLoggedIn(text: string) {
+        await this.verifySuccessNotification(this.successNotification, text);
+    }
+
+    async logOut() {
+        await this.logoutButton.click();
+    }
 }

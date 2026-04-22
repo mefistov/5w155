@@ -1,0 +1,32 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+
+# Logs
+logs
+*.log
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime / build
+dist/
+build/
+
+# Env
+.env
+.env.*
+.env.*.local
+
+# VS Code / IDE (optional)
+.vscode/
+.idea/
+
+# Playwright-specific artifacts
+.playwright/                # internal caches
+playwright-report/          # HTML / test report output
+playwright/.auth/           # saved authentication/browser state — recommended to ignore.
+test-results/               # test result files (e.g. junit/allure outputs)
+*.zip

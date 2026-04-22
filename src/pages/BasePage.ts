@@ -52,6 +52,17 @@ export class BasePage {
         }
     }
 
+    async verifySuccessNotification(
+        locator: Locator,
+        expectedText?: string
+    ): Promise<void> {
+        await locator.waitFor({state: 'visible'});
+
+        if (expectedText) {
+            expect.soft(locator).toContainText(expectedText);
+        }
+    }
+
     async waitForNavigation() {
         await this.page.waitForLoadState('networkidle');
     }
